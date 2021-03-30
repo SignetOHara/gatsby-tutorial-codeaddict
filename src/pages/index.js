@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <Layout>
       <h1>Hello from Gatsby</h1>
+      <h2>THIS IS A TEST!</h2>
       <ExampleButton>Click Me</ExampleButton>
     </Layout>
   );

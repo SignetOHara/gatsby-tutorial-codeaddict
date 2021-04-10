@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
-import FirstPage from "./steps/FirstPage";
-import Courses from "./steps/Courses";
-import LastPage from "./steps/LastPage";
-import Success from "./steps/Success";
+import FirstPage from "./Steps/FirstPage";
+import Courses from "./Steps/Courses";
+import LastPage from "./Steps/LastPage";
+import Success from "./Steps/Success";
 // import classes from "./Form.module.scss";
 
 const MainForm = () => {

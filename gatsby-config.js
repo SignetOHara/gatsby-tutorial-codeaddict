@@ -17,15 +17,16 @@ module.exports = {
     person: { name: "Malcom", age: 56 },
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.SPACE_ID,
+        spaceId: process.env.GATSBY_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.ACCESS_TOKEN,
+        accessToken: process.env.GATSBY_ACCESS_TOKEN,
       },
     },
     {

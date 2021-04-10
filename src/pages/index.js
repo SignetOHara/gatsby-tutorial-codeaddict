@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import { ExampleButton } from "../components/button";
+import MainForm from '../components/Form/MainForm'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <h2>THIS IS MY SECOND TEST!</h2>
       <h2>AND ANOTHER ONE!</h2>
       <ExampleButton>Click Me</ExampleButton>
+      <MainForm />
     </Layout>
   );
 }

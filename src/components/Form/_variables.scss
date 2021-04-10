@@ -1,0 +1,59 @@
+/*
+=============== 
+COLORS
+===============
+*/
+
+$primaryColor: #fafafa;
+$secondaryColor: #e8f1f5;
+$backgroundColor: #ebeeee;
+$section2BackgroundColor: #d2dce0;
+$accent: rgba(0, 198, 247, 0.933);
+$hover: #00a9d3ee;
+$active: #00c6f7c7;
+$buttonFontColor: #333333;
+$backgroundHover: #2021240a;
+$backgroundFocus: #2021241f;
+$backgroundActive: #2021241a;
+$hamburgerFocus: #5f63681f;
+$footer: #2e2e2e;
+$black: #000000;
+$white: white;
+$red: hsl(360, 67%, 44%);
+$grey: #d9d9d9;
+$darkGrey: #aca5a5;
+
+/*
+=============== 
+FORMATTING
+===============
+*/
+
+$spacing: 0.2rem;
+$transition: all 0.2s linear;
+
+$primaryFont: "Montserrat", sans-serif;
+$secondaryFont: "Sacramento", cursive;
+$boldFont: 700;
+$semiBoldFont: 600;
+$normalFont: 500;
+$lightFont: 400;
+
+$h1FontSize: 1.5rem;
+$h2FontSize: 1.2rem;
+$h3FontSize: 1.2rem;
+$h4FontSize: 0.825rem;
+
+$lightShadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$darkShadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+$blueShadow: 6px 6px 30px -6px rgba(0, 198, 247, 0.933);
+
+// BREAKPOINT VARIABLES
+
+$defaultSmallPhone: 22rem; // This is 360px. Only use if formatting is broken on anything smaller (e.g. iPhone 5/SE which is 320px and the smallest reasonable screen size)
+$smallTablet: 33.75rem; // SurfaceDuo
+$nexus: 37.5rem;
+$ipad: 48rem;
+$ipadPro: 64rem;
+$bigDesktop: 70rem;
+

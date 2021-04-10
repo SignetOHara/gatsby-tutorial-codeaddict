@@ -17,6 +17,7 @@ module.exports = {
     person: { name: "Malcom", age: 56 },
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

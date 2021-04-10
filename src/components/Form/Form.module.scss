@@ -1,0 +1,200 @@
+@use './variables' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  max-width: 90vw;
+  width: 35rem;
+  margin: 2rem auto 0;
+  background-color: white;
+  border-radius: 10px;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.stepContainer {
+  .textElement {
+    .longMsgLabel {
+      margin-bottom: 1rem;
+
+      .longMsg,
+      .errorMessage {
+        position: initial;
+      }
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      span {
+        font-size: small;
+        color: #595959;
+        padding-left: 1rem;
+      }
+
+      .errorMessage {
+        font-size: small;
+        color: red;
+        margin: 0;
+        position: absolute;
+        bottom: 10px;
+        padding-left: 1rem;
+      }
+
+      input {
+        margin: 0.3rem 0 2rem;
+        height: 3.5rem;
+        padding: 0.75rem 1rem 0.875rem;
+        border-radius: 4px;
+        border: 1px solid #000;
+
+        &:focus {
+          border: 2px solid $accent !important;
+          background-color: $backgroundFocus;
+        }
+      }
+
+      .longMsgInput {
+        margin: 0.3rem 0 0;
+      }
+    }
+  }
+
+  .checkboxContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+
+    p {
+      margin: 0;
+    }
+
+    .checkboxElement {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      h5 {
+        margin: 1rem 0;
+      }
+
+      label {
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        cursor: pointer;
+
+        input {
+          cursor: pointer;
+          margin-right: 1rem;
+
+          &:focus {
+            box-shadow: 0 0 0 3px $accent;
+          }
+        }
+      }
+
+      .other {
+        input {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .firstButton {
+      margin-left: auto;
+    }
+
+    button {
+      background-color: $accent;
+      font-weight: $semiBoldFont;
+      transition: $transition;
+      padding: 10px 30px;
+      border-radius: 40px;
+      text-transform: capitalize;
+      box-shadow: $darkShadow;
+      color: $buttonFontColor;
+      justify-self: flex-end;
+
+      &:hover,
+      &:focus {
+        background-color: $hover;
+        color: $white;
+      }
+
+      &:active {
+        transform: translateY(2px);
+      }
+
+      &:disabled {
+        background-color: $grey;
+        cursor: not-allowed;
+      }
+    }
+
+    .backButton {
+      background-color: transparent;
+      color: $accent;
+      border: 1px solid $accent;
+      align-self: flex-start;
+
+      &:hover,
+      &:focus {
+        background-color: $accent;
+        border: 1px solid $accent;
+        color: white;
+        transition: $transition;
+      }
+
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+  }
+  .successContainer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $nexus) {
+  .stepContainer {
+    .textElement {
+      label {
+        .textElement__Age {
+          margin: 0.3rem 0 2rem;
+        }
+
+        p {
+          font-size: small;
+          color: #595959;
+          margin: 0;
+          position: absolute;
+          bottom: 10px;
+          padding-left: 1rem;
+        }
+
+        .errorMessage {
+          font-size: small;
+          color: red;
+          margin: 0;
+          position: absolute;
+          bottom: 10px;
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}

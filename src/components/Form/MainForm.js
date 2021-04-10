@@ -30,9 +30,12 @@ const MainForm = () => {
   };
 
   function encode(data) {
-    return Object.keys(data)
+    console.log("before", data)
+    const transformedData = Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
       .join("&");
+    console.log("after", transformedData)
+    return transformedData
   }
 
   const submitHandler = async (data, e) => {
@@ -51,12 +54,11 @@ const MainForm = () => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           // "form-name": e.target.getAttribute("Contact Form"),
-          "form-name": "Contact Form",
+          "form-name": "Contact-form",
           ...data,
         }),
       })
         .then(res => {
-          console.log(res);
           if (res.status === 404) {
             setFormStep(4);
           } else {
@@ -69,13 +71,13 @@ const MainForm = () => {
 
   return (
     <form
-      name="Contact Form"
+      name="Contact-form"
       data-netlify="true"
       onSubmit={handleSubmit(submitHandler)}
       netlify-honeypot="bot-field"
     >
       <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value="Contact Form" />
+      <input type="hidden" name="form-name" value="Contact-form" />
       {/* Add logo here when using in main B&S site */}
       <h2>Beats &amp; Steps Enrollment Form</h2>
       {formStep === 0 && <FirstPage {...props} />}

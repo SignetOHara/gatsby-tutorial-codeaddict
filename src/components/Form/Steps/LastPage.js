@@ -9,7 +9,7 @@ const LastPage = ({ setFormStep, register, watch }) => {
     other = true;
   }
 
-  const checker = watch("HowDidTheyKnow") || other === true;
+  const checker = watch("howDidTheyKnow") || other === true;
 
   return (
     <section >
@@ -20,7 +20,7 @@ const LastPage = ({ setFormStep, register, watch }) => {
             <input
               type="radio"
               id="website"
-              {...register("HowDidTheyKnow")}
+              {...register("howDidTheyKnow")}
               value="website"
             />
             Website
@@ -29,7 +29,7 @@ const LastPage = ({ setFormStep, register, watch }) => {
             <input
               type="radio"
               id="facebook"
-              {...register("HowDidTheyKnow")}
+              {...register("howDidTheyKnow")}
               value="facebook"
             />
             Facebook
@@ -38,7 +38,7 @@ const LastPage = ({ setFormStep, register, watch }) => {
             <input
               type="radio"
               id="instagram"
-              {...register("HowDidTheyKnow")}
+              {...register("howDidTheyKnow")}
               value="instagram"
             />
             Instagram
@@ -47,7 +47,7 @@ const LastPage = ({ setFormStep, register, watch }) => {
             <input
               type="radio"
               id="youtube"
-              {...register("HowDidTheyKnow")}
+              {...register("howDidTheyKnow")}
               value="youtube"
             />
             Youtube
@@ -56,7 +56,7 @@ const LastPage = ({ setFormStep, register, watch }) => {
             <input
               type="radio"
               id="friends"
-              {...register("HowDidTheyKnow")}
+              {...register("howDidTheyKnow")}
               value="friends"
             />
             Friends or Family

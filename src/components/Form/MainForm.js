@@ -38,7 +38,7 @@ const MainForm = () => {
     return transformedData
   }
 
-  const submitHandler = async (data, e) => {
+  const submitHandler = (data, e) => {
     if (
       (data.HowDidTheyKnow === null ||
         data.HowDidTheyKnow === undefined ||
@@ -49,7 +49,7 @@ const MainForm = () => {
     } else {
       e.preventDefault();
       // Send to Netlify Here
-      await fetch("/", {
+      fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
@@ -78,6 +78,7 @@ const MainForm = () => {
     >
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="Contact-form" />
+      <input type="hidden" name="ballet" />
       {/* Add logo here when using in main B&S site */}
       <h2>Beats &amp; Steps Enrollment Form</h2>
       {formStep === 0 && <FirstPage {...props} />}

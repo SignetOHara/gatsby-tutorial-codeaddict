@@ -43,7 +43,7 @@ const Courses = ({ setFormStep, register, getValues, watch }) => {
               type="checkbox"
               id="ballet"
               {...register("ballet")}
-              value="true"
+              value="Yes"
             />
             Ballet
           </label>
@@ -52,7 +52,7 @@ const Courses = ({ setFormStep, register, getValues, watch }) => {
               type="checkbox"
               id="jazz"
               {...register("jazz")}
-              value="true"
+              value="Yes"
             />
             Jazz
           </label>
@@ -61,7 +61,7 @@ const Courses = ({ setFormStep, register, getValues, watch }) => {
               type="checkbox"
               id="hiphop"
               {...register("hiphop")}
-              value="true"
+              value="Yes"
             />
             Hiphop
           </label>
@@ -73,7 +73,7 @@ const Courses = ({ setFormStep, register, getValues, watch }) => {
               type="checkbox"
               id="voice"
               {...register("voice")}
-              value="true"
+              value="Yes"
             />
             Voice
           </label>
@@ -82,7 +82,7 @@ const Courses = ({ setFormStep, register, getValues, watch }) => {
               type="checkbox"
               id="piano"
               {...register("piano")}
-              value="true"
+              value="Yes"
             />
             Piano
           </label>
@@ -91,7 +91,7 @@ const Courses = ({ setFormStep, register, getValues, watch }) => {
               type="checkbox"
               id="guitar"
               {...register("guitar")}
-              value="true"
+              value="Yes"
             />
             Guitar
           </label>
@@ -100,7 +100,7 @@ const Courses = ({ setFormStep, register, getValues, watch }) => {
               type="checkbox"
               id="violin"
               {...register("violin")}
-              value="true"
+              value="Yes"
             />
             Violin
           </label>
